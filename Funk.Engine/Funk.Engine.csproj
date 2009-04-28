@@ -53,6 +53,7 @@
     <Reference Include="System">
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Data" />
     <Reference Include="System.Xml">
       <Private>False</Private>
     </Reference>
@@ -66,6 +67,64 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Framework\Components\Asset\Asset.cs" />
+    <Compile Include="Framework\Components\Asset\IAsset.cs" />
+    <Compile Include="Framework\Components\Asset\AssetManager.cs" />
+    <Compile Include="Framework\Components\Input\RelativeKeyboard.cs" />
+    <Compile Include="Framework\Components\Input\RelativeMouse.cs" />
+    <Compile Include="Framework\Components\StatsViewer\StatsViewerComponent.cs" />
+    <Compile Include="Framework\Components\Framerate\FramerateComponent.cs" />
+    <Compile Include="Framework\Components\Time\TimeComponent.cs" />
+    <Compile Include="Gameplay\GameObject\MeshComponent.cs" />
+    <Compile Include="Gameplay\GameObject\UpdatableGameObjectComponent.cs" />
+    <Compile Include="Gameplay\GameObject\GameObject.cs" />
+    <Compile Include="Gameplay\GameObject\GameObjectComponent.cs" />
+    <Compile Include="Gameplay\GameObject\TransformComponent.cs" />
+    <Compile Include="Gameplay\Scene\GameObjectList.cs" />
+    <Compile Include="Gameplay\Scene\IGameObjectCollection.cs" />
+    <Compile Include="Gameplay\Scene\IUpdatableGamePlay.cs" />
+    <Compile Include="Gameplay\Scene\IUpdatableRealTime.cs" />
+    <Compile Include="Gameplay\Scene\World.cs" />
+    <Compile Include="Graphics\BasicRenderer.cs" />
+    <Compile Include="Graphics\Camera\Camera.cs" />
+    <Compile Include="Graphics\Camera\CameraControler.cs" />
+    <Compile Include="Graphics\Camera\OrbitCamera.cs" />
+    <Compile Include="Graphics\Camera\OrthoCam.cs" />
+    <Compile Include="Graphics\Camera\TopDownCamera.cs" />
+    <Compile Include="Graphics\Color\ColorHelper.cs" />
+    <Compile Include="Graphics\DeferredRenderer.cs" />
+    <Compile Include="Graphics\Effects\BlurEffect.cs" />
+    <Compile Include="Graphics\Effects\CombineEffect.cs" />
+    <Compile Include="Graphics\Effects\DirectionalLightEffect.cs" />
+    <Compile Include="Graphics\Effects\DownSamplerEffect.cs" />
+    <Compile Include="Graphics\Effects\EdgeEffect.cs" />
+    <Compile Include="Graphics\Effects\EffectWrapper.cs" />
+    <Compile Include="Graphics\Effects\FullScreenEffect.cs" />
+    <Compile Include="Graphics\Effects\PointLightEffect.cs" />
+    <Compile Include="Graphics\Effects\RenderToGBufferEffect.cs" />
+    <Compile Include="Graphics\Effects\SpriteEffect.cs" />
+    <Compile Include="Graphics\Effects\SSAOBlurEffect.cs" />
+    <Compile Include="Graphics\Effects\SSAOEffect.cs" />
+    <Compile Include="Graphics\Effects\UniformEffect.cs" />
+    <Compile Include="Graphics\Effects\WireFrameEffect.cs" />
+    <Compile Include="Graphics\Light\DirectionalLight.cs" />
+    <Compile Include="Graphics\Light\Light.cs" />
+    <Compile Include="Graphics\Light\PointLight.cs" />
+    <Compile Include="Graphics\Material\Material.cs" />
+    <Compile Include="Graphics\Mesh\BoundingSphereMesh.cs" />
+    <Compile Include="Graphics\Mesh\MatrixDecomposition.cs" />
+    <Compile Include="Graphics\Mesh\Mesh.cs" />
+    <Compile Include="Graphics\Mesh\MeshHelper.cs" />
+    <Compile Include="Graphics\Mesh\MeshImpl.cs" />
+    <Compile Include="Graphics\Mesh\MeshInstance.cs" />
+    <Compile Include="Graphics\Mesh\PlanMesh.cs" />
+    <Compile Include="Graphics\RendererFlags.cs" />
+    <Compile Include="Graphics\Sprite\AnimatedSprite.cs" />
+    <Compile Include="Graphics\Sprite\Sprite.cs" />
+    <Compile Include="Graphics\Sprite\SpriteSheet.cs" />
+    <Compile Include="Graphics\Sprite\StaticSprite.cs" />
+    <Compile Include="Graphics\Utils\FrameInfo.cs" />
+    <Compile Include="MaterialReader.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -73,6 +132,9 @@
       <Project>c46be6d0-a31d-44db-b686-a45e999b35e9</Project>
       <Visible>False</Visible>
     </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Sound\" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
