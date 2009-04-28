@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace Ika.Script
+namespace Funk.Engine.Script
 {
     public class LuaSourceFile
     {

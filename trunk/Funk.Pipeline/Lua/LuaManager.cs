@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using LuaInterface;
 
-namespace Ika.Script
+namespace Funk.Engine.Script
 {
     public class LuaManager
     {
